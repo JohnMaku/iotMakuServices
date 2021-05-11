@@ -65,8 +65,8 @@ services:
       # DEFAULT DASH PASS
       EMQX_DASHBOARD__DEFAULT_USER__PASSWORD: "emqxdashpass" # Para cambiar el PW del dashboard.
 
-      # DEFAULT APP SECRET
-#      EMQX_MANAGEMENT__DEFAULT_APPLICATION__SECRET: "${EMQX_DEFAULT_APPLICATION_SECRET}"
+      # DEFAULT APP SECRET Se cambia la contraseña de la app para dar mas seguridad
+      EMQX_MANAGEMENT__DEFAULT_APPLICATION__SECRET: "emqxsecret" #"${EMQX_DEFAULT_APPLICATION_SECRET}"
 
       EMQX_ALLOW_ANONYMOUS: "false" #Indica que en la fase de desarrollo permite accseso sin
       # verificar credenciales si es true.
