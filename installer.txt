@@ -8,6 +8,7 @@ chmod  777 install_docker.sh
 sudo rm install_docker.sh
 
 prueba
+prueba
 
 
 
