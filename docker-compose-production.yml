@@ -16,7 +16,7 @@ services:
     restart: always
     working_dir: /home/node/app
     volumes:
-      - ./mycode/index.js:/home/node/app/index.js
+      - ./app/:/home/node/app
     ports:
       - "3000:3000" #Puerto aplicacion web
       - "3001:3001" #Puerto de la API
@@ -28,6 +28,7 @@ services:
       - mongo
 
     command: sh -c "node index.js"
+     #command: sh -c "npm install"
 
   mongo:
     container_name: mongo
